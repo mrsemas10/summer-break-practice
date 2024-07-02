@@ -143,20 +143,14 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 
 console.log('Remove Eggbert (hint look at the slice/splice method(s))')
 whereIsWaldo.splice(1, 1);
-console.log(whereIsWaldo);
+// console.log(whereIsWaldo);
 
 console.log('Change "Neff" to "No One"')
 whereIsWaldo[1][2]="No One";
-console.log(whereIsWaldo);
+// console.log(whereIsWaldo);
 
 console.log('Access and console.log "Waldo"')
-console.log(whereIsWaldo[2][1][1]);
-
-
-
-
-
-
+// console.log(whereIsWaldo[2][1][1]);
 
 
 
@@ -166,6 +160,16 @@ console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 
 
-////////////////////////////////
-//  Find the Median
-////////////////////////////////
+
+//  Find the Median cannot figure this one out. do not understand how to use math.floor
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+let sum = 0;
+
+for (let i = 0; i < nums.length; i++ ) {
+  sum += nums[i];
+}
+const median = (sum / nums.length);
+console.log(sum) 
+console.log (median);
+
