@@ -172,29 +172,170 @@ const myArray = [5, 10, 500, 20];
 
 console.log('Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.')
 myArray.push('Aegon', 'Erica');
-console.log(myArray);
+// console.log(myArray);
 
 
 console.log('Remove the 5 from the beginning of the array.');
 myArray.shift();
-console.log(myArray);
+// console.log(myArray);
 
 console.log('Add the string "Bob Marley"to the beginning of the array.')
 myArray.unshift('Bob Marley');
-console.log(myArray);
+// console.log(myArray);
 
 console.log('Remove the string of your choice from the end of the array.');
 myArray.pop();
-console.log(myArray);
+// console.log(myArray);
 
 console.log('Reverse this array using Array.prototype.reverse().')
-Array.prototype.reverse(myArray);
-console.log(myArray);
+myArray.reverse();
+// console.log(myArray);
 
-// Did you mutate the array? 
-// What does mutate mean? 
-// Did the .reverse() method return anything?
+// Did you mutate the array? no
+// What does mutate mean? change
+// Did the .reverse() method return anything? the array in reverse but still kept all the items
 
+// F. Biggie Smalls
+console.log("Biggie Smalls")
+
+let num = 8;
+
+if (num<100) {
+        // console.log("little number");
+    }
+else if (num>=100) {
+        // console.log("big number");
+    }
+
+// G. Monkey in the Middle
+console.log("Monkey in the Middle")
+if (num<5) {
+    // console.log("little number");
+}
+else if (num>10) {
+    // console.log("big number");
+}
+else {
+    // console.log('monkey')
+}
+
+// H. What's in Your Closet?
+console.log("Closet")
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+    ];
+    
+    // 1.
+// console.log('Kristyn is rocking that '+ kristynsCloset[2] + ' today')
+     // 2.
+kristynsCloset.splice(6, 0, 'raybans');
+// console.log(kristynsCloset);
+     // 3.
+kristynsCloset[5]= 'stained knit hat';
+// console.log(kristynsCloset);
+
+
+
+  // Tom's closet is more complicated. Check out this nested data structure!!
+const tomsCloset = [
+    [
+        // These are Tom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Tom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Tom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+     // 4.
+// console.log(tomsCloset[0][0]);
+    // 5.
+// console.log(tomsCloset[1][1]);
+    // 6.
+// console.log(tomsCloset[2][2]);
+    // 7.
+// console.log('Tom is looking fierce in a ' + tomsCloset[0][3]  + ', ' + tomsCloset[1][0] + ' and ' + tomsCloset[2][2] +'!')
+    // 8.
+tomsCloset[1][2] = "Footie Pajamas";
+// console.log(tomsCloset);
+
+
+// -------IV. Functions------- i cant get these to pring...i dont understand what im doing wrong
+
+// A. printGreeting
+// function sayHello(name) {
+//     return ('Hello ' + name + '!');;
+    
+// }
+// // console.log('Hello ' + name + '!');
+// function sayHello(name) {
+//     console.log("this is printing...", name);
+//     console.log(`This is also printing ${name}`);
+// }
+
+
+
+// -------V. Objects-------
+// A. Make a user object
+const user ={
+    name: 'Erica',
+    email: 'me@me.com',
+    age: 38,
+    purchased: []
+
+}
+
+// B. Update the user
+user.email="you@you.com";
+console.log(user);
+user.age=age+2;
+console.log(user);
+
+// C. Adding keys and values
+user.location = "Ghana";
+console.log(user);
+
+// D. Shopaholic!
+user.purchased.push("carbohydrates", "peace of mind", "Merino jodhpurs");
+console.log(user);
+console.log(user.purchased[2]);
+
+// E. Object-within-object
+user.friend = {
+    name: "Grace",
+    age: 44,
+    location: 'Kenya',
+    purchased: []
+}
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+console.log(user.friend);
+user.friend.purchased.push("the one ring", "a latte");
+console.log(user.friend.purchased[1]);
+
+// F. Loops
+
+
+
+
+// G. Functions can operate on objects
 
 
 
