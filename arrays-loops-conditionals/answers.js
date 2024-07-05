@@ -173,3 +173,51 @@ const median = (sum / nums.length);
 console.log(sum) 
 console.log (median);
 
+// Hungry for more?
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+
+
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+console.log('Alien Attire')
+let kristynsShoe = kristynsCloset.shift();
+console.log(kristynsCloset)
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
+
+console.log('Dress Us Up')
+let firstOutfitT = thomsCloset[0][2] + thomsCloset[1][1] + kristynsCloset[1];
+let secondOutfitT = thomsCloset[0][3]  + kristynsCloset[4] + ' and ' + thomsCloset[2][1];
+let thirdOutfitT = kristynsCloset[3] + ' and ' + thomsCloset[2][2];
+let firstOutfitK = kristynsCloset[4] + kristynsCloset[3] + thomsCloset[0][1];
+let secondOutfitK = kristynsCloset[2] + ', ' + thomsCloset[1][2] + ' and ' + kristynsCloset[0];
+let thirdOutfitK = thomsCloset[2][1] + ' and ' + thomsCloset[1][2];
+console.log('Kristyn is wearing ' + secondOutfitK + ' and Thom is wearing ' + thirdOutfitT + ' to class today!');
