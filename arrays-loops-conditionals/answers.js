@@ -153,15 +153,18 @@ console.log('Access and console.log "Waldo"')
 // console.log(whereIsWaldo[2][1][1]);
 
 
-
-
-////////////////////////////////
 //  Excited Kitten
-////////////////////////////////
+console.log('Excited Kitten"')
+for (let i=1; i<=20; i++){
+    console.log("Love me, pet me! HSSSSSS!")
+    if (i%2===0) {
+        //not sure how to put the phrases as random. not sure how to use math.random
+    }
+}
 
 
 
-//  Find the Median cannot figure this one out. do not understand how to use math.floor
+//  Find the Median (cannot figure this one out. do not understand how to use math.floor)
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
 let sum = 0;
