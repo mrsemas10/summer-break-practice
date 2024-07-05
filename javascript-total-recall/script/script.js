@@ -120,7 +120,19 @@ for (let i=0; i<=100; i++) {
 }
 
 // D. Savings account
+console.log("savings")
+let bankaccount = 0;
+for (let i=1; i<=10; i++) {
+    bankaccount+=i;
+    // console.log(bankaccount);
+}
+console.log(bankaccount);
 
+let bankaccount2 = 0;
+for (let i=1; i<=100; i++) {
+    bankaccount2+=i*2;
+}
+console.log(bankaccount2);
 
 
 
@@ -276,7 +288,7 @@ tomsCloset[1][2] = "Footie Pajamas";
 // console.log(tomsCloset);
 
 
-// -------IV. Functions------- i cant get these to pring...i dont understand what im doing wrong
+// -------IV. Functions------- i cant get these to print...i dont understand what im doing wrong
 
 // A. printGreeting
 // function sayHello(name) {
@@ -298,22 +310,21 @@ const user ={
     email: 'me@me.com',
     age: 38,
     purchased: []
-
 }
 
 // B. Update the user
 user.email="you@you.com";
-console.log(user);
+// console.log(user);
 user.age=age+2;
-console.log(user);
+// console.log(user);
 
 // C. Adding keys and values
 user.location = "Ghana";
-console.log(user);
+// console.log(user);
 
 // D. Shopaholic!
 user.purchased.push("carbohydrates", "peace of mind", "Merino jodhpurs");
-console.log(user);
+// console.log(user);
 // console.log(user.purchased[2]);
 
 // E. Object-within-object
@@ -361,8 +372,8 @@ let cat1 = {
     breed: 'calico',
     age: 8
 }
-console.log(cat1.age);
-console.log(cat1.breed);
+// console.log(cat1.age);
+// console.log(cat1.breed);
 
 // 2. Papa cat
 
@@ -380,7 +391,7 @@ function combineCats(cat1, cat2) {
     return mama + papa;
 }
 
-console.log(combineCats);
+// console.log(combineCats);
 
 
 
