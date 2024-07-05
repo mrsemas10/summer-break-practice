@@ -173,6 +173,10 @@ const median = (sum / nums.length);
 console.log(sum) 
 console.log (median);
 
+
+
+
+
 // Hungry for more?
 const kristynsCloset = [
     "left shoe",
@@ -209,9 +213,9 @@ const kristynsCloset = [
 
 console.log('Alien Attire')
 let kristynsShoe = kristynsCloset.shift();
-console.log(kristynsCloset)
+// console.log(kristynsCloset)
 thomsCloset[2].push(kristynsShoe);
-console.log(thomsCloset);
+// console.log(thomsCloset);
 
 console.log('Dress Us Up')
 let firstOutfitT = thomsCloset[0][2] + thomsCloset[1][1] + kristynsCloset[1];
@@ -220,4 +224,4 @@ let thirdOutfitT = kristynsCloset[3] + ' and ' + thomsCloset[2][2];
 let firstOutfitK = kristynsCloset[4] + kristynsCloset[3] + thomsCloset[0][1];
 let secondOutfitK = kristynsCloset[2] + ', ' + thomsCloset[1][2] + ' and ' + kristynsCloset[0];
 let thirdOutfitK = thomsCloset[2][1] + ' and ' + thomsCloset[1][2];
-console.log('Kristyn is wearing ' + secondOutfitK + ' and Thom is wearing ' + thirdOutfitT + ' to class today!');
+// console.log('Kristyn is wearing ' + secondOutfitK + ' and Thom is wearing ' + thirdOutfitT + ' to class today!');

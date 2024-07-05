@@ -314,7 +314,7 @@ console.log(user);
 // D. Shopaholic!
 user.purchased.push("carbohydrates", "peace of mind", "Merino jodhpurs");
 console.log(user);
-console.log(user.purchased[2]);
+// console.log(user.purchased[2]);
 
 // E. Object-within-object
 user.friend = {
@@ -323,20 +323,64 @@ user.friend = {
     location: 'Kenya',
     purchased: []
 }
-console.log(user.friend.name);
-console.log(user.friend.location);
+// console.log(user.friend.name);
+// console.log(user.friend.location);
 user.friend.age = 55;
-console.log(user.friend);
+// console.log(user.friend);
 user.friend.purchased.push("the one ring", "a latte");
-console.log(user.friend.purchased[1]);
+// console.log(user.friend.purchased[1]);
 
 // F. Loops
 
+for (i=0; i<user.purchased.length; i++) {
+    // console.log(user.purchased[i]);
+}
 
+for (i=0; i<user.friend.purchased.length; i++) {
+    // console.log(user.friend.purchased[i]);
+}
 
+// G. Functions can operate on objects (i cannot get the function to print so i am not sure if it is right or not. 
+// i cannot grasp the concept of functions)
 
-// G. Functions can operate on objects
+function updateUser() {
+    let age = [];
+    for (let i = 1; i < user.age; i++) {
+        age.push(user.age[i]);
+    }
+    console.log(age);
+}
 
+// -------Hungry for More-------
+// Cat Combinator
+
+// 1. Mama cat
+
+let cat1 = {
+    name: 'Gato',
+    breed: 'calico',
+    age: 8
+}
+console.log(cat1.age);
+console.log(cat1.breed);
+
+// 2. Papa cat
+
+let cat2 = {
+    name: 'Gatorade',
+    breed: 'black',
+    age: 10
+}
+
+// 3. Combine Cats!
+
+function combineCats(cat1, cat2) {
+    let mama = cat1;
+    let papa = cat2;
+    return mama + papa;
+}
+
+console.log(combineCats);
 
 
 
